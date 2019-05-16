@@ -1,0 +1,8 @@
+name: Gold
+type: theme
+base theme: bartik
+description: this is base theme
+core: 8.x
+
+libraries:
+  - gold/global-style

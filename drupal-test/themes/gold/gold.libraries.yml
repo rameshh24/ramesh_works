@@ -1,0 +1,5 @@
+global-style:
+  version: 0.1
+  css:
+    theme:
+      css/style.css: {}

@@ -1,0 +1,4 @@
+custom-paragraph:
+  css:
+    theme:
+      css/style.css: {}

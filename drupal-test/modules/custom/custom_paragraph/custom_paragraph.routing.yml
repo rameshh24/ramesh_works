@@ -1,0 +1,18 @@
+custom_paragraph.admin_setting_form:
+  path: '/admin/config/custom_paragraph/adminsettings'
+  defaults:
+    _form: '\Drupal\custom_paragraph\Form\ParagraphFieldForm'
+    _title: 'Paragraph Field Form'
+  requirements:
+    _permission: 'access admininstration page'
+  option:
+    _admin_route: TRUE
+
+custom_paragraph.configform:
+  path: '/test'
+  defaults:
+    _controller: '\Drupal\custom_paragraph\Controller\TestTwigController::content'
+    _title: 'Config form'
+  requirements:
+    _permission: 'access content'
+      

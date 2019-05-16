@@ -1,0 +1,35 @@
+<?php
+/**
+* @file
+*  Paragraph module file
+*
+**/
+/*
+* Implement hook_theme()
+*/
+
+function custom_paragraph_theme($existing, $type, $theme, $path){
+  //$config = \Drupal::config('custom_paragraph.adminsettings');
+  //$welcome_message = $config->get('welcome_message');
+  return [
+    'paragraph__paragraph_2' => [
+      'base hook' => 'paragraph',
+      ],
+    'paragraph__paragraph_1' => [
+      'base hook' => 'paragraph'
+    ],
+
+  ];
+}
+function custom_paragraph_preprocess_paragraph(&$variables) {
+  $config = \Drupal::config('custom_paragraph.adminsettings');
+  $caption_text = $config->get('caption_text');
+  $short_link = $config->get('links');
+  $link_text = $config->get('link_text');
+  $welcome_message = $config->get('welcome_message');
+  $variables['welcome_message'] = $welcome_message;
+  $variables['caption_text'] = $caption_text;
+  $variables['links'] = $short_link;
+  $variables['link_text'] = $link_text;
+
+}

@@ -1,0 +1,6 @@
+name: Custom Paragraph
+type: module
+description: This module use for overwrite the paragraphs template
+core: 8.x
+libraries:
+  - custom_paragraph/custom-paragraph
